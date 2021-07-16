@@ -5,6 +5,7 @@ function ExpenseFilter(props) {
   function dropDownFilterHandler(event) {
     props.onFilterChange(event.target.value);
   }
+
   return (
     <div className="expenses-filter">
       <div className="expenses-filter__control">
