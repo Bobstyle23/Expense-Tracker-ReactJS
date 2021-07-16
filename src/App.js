@@ -1,10 +1,14 @@
 import Expenses from "./components/Expenses";
+import NewExpense from "./components/NewExpense";
 import "../src/styles/Expenses.css";
 
 function App() {
+  function addExpenseHandler(expense) {
+    console.log(expense);
+  }
   return (
     <div className="expenses">
-      <h2>Let's get started!</h2>
+      <NewExpense onAddExpense={addExpenseHandler} />
       <Expenses />
     </div>
   );
